@@ -74,12 +74,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AVCamSwift/ViewController.swift"
-            timestampString = "438254234.142504"
+            timestampString = "438609866.865997"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "263"
-            endingLineNumber = "263"
-            landmarkName = "subjectAreaDidChange(_:)"
+            startingLineNumber = "267"
+            endingLineNumber = "267"
+            landmarkName = "prepareForSegue(_:sender:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -90,12 +90,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AVCamSwift/ViewController.swift"
-            timestampString = "438255977.252795"
+            timestampString = "438610897.097606"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "314"
-            endingLineNumber = "314"
-            landmarkName = "runStillImageCaptureAnimation()"
+            startingLineNumber = "320"
+            endingLineNumber = "320"
+            landmarkName = "setFlashMode(_:device:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -106,12 +106,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AVCamSwift/ViewController.swift"
-            timestampString = "438255977.252795"
+            timestampString = "438610897.097606"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "317"
-            endingLineNumber = "317"
-            landmarkName = "runStillImageCaptureAnimation()"
+            startingLineNumber = "323"
+            endingLineNumber = "323"
+            landmarkName = "setFlashMode(_:device:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -122,12 +122,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AVCamSwift/ViewController.swift"
-            timestampString = "438255977.252795"
+            timestampString = "438610897.097606"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "414"
-            endingLineNumber = "414"
-            landmarkName = "toggleMovieRecord(_:)"
+            startingLineNumber = "378"
+            endingLineNumber = "378"
+            landmarkName = "checkDeviceAuthorizationStatus()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVCamSwift/AVPlayerViewController.swift"
+            timestampString = "438611208.001879"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -138,12 +154,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AVCamSwift/ViewController.swift"
-            timestampString = "438255977.252795"
+            timestampString = "438609921.900195"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "372"
-            endingLineNumber = "372"
-            landmarkName = "captureOutput(_:didFinishRecordingToOutputFileAtURL:fromConnections:error:)"
+            startingLineNumber = "265"
+            endingLineNumber = "265"
+            landmarkName = "prepareForSegue(_:sender:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

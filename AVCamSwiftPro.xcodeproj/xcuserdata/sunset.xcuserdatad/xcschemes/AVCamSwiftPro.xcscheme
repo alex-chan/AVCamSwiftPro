@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CB952BB81A0F657800559378"
-               BuildableName = "AVCamSwift.app"
-               BlueprintName = "AVCamSwift"
-               ReferencedContainer = "container:AVCamSwift.xcodeproj">
+               BuildableName = "AVCamSwiftPro.app"
+               BlueprintName = "AVCamSwiftPro"
+               ReferencedContainer = "container:AVCamSwiftPro.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CB952BCD1A0F657800559378"
-               BuildableName = "AVCamSwiftTests.xctest"
-               BlueprintName = "AVCamSwiftTests"
-               ReferencedContainer = "container:AVCamSwift.xcodeproj">
+               BuildableName = "AVCamSwiftProTests.xctest"
+               BlueprintName = "AVCamSwiftProTests"
+               ReferencedContainer = "container:AVCamSwiftPro.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CB952BCD1A0F657800559378"
-               BuildableName = "AVCamSwiftTests.xctest"
-               BlueprintName = "AVCamSwiftTests"
-               ReferencedContainer = "container:AVCamSwift.xcodeproj">
+               BuildableName = "AVCamSwiftProTests.xctest"
+               BlueprintName = "AVCamSwiftProTests"
+               ReferencedContainer = "container:AVCamSwiftPro.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CB952BB81A0F657800559378"
-            BuildableName = "AVCamSwift.app"
-            BlueprintName = "AVCamSwift"
-            ReferencedContainer = "container:AVCamSwift.xcodeproj">
+            BuildableName = "AVCamSwiftPro.app"
+            BlueprintName = "AVCamSwiftPro"
+            ReferencedContainer = "container:AVCamSwiftPro.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CB952BB81A0F657800559378"
-            BuildableName = "AVCamSwift.app"
-            BlueprintName = "AVCamSwift"
-            ReferencedContainer = "container:AVCamSwift.xcodeproj">
+            BuildableName = "AVCamSwiftPro.app"
+            BlueprintName = "AVCamSwiftPro"
+            ReferencedContainer = "container:AVCamSwiftPro.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CB952BB81A0F657800559378"
-            BuildableName = "AVCamSwift.app"
-            BlueprintName = "AVCamSwift"
-            ReferencedContainer = "container:AVCamSwift.xcodeproj">
+            BuildableName = "AVCamSwiftPro.app"
+            BlueprintName = "AVCamSwiftPro"
+            ReferencedContainer = "container:AVCamSwiftPro.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

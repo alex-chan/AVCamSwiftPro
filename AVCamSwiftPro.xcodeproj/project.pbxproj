@@ -14,6 +14,8 @@
 		CB952BC91A0F657800559378 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB952BC71A0F657800559378 /* LaunchScreen.xib */; };
 		CB952BD51A0F657800559378 /* AVCamSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB952BD41A0F657800559378 /* AVCamSwiftTests.swift */; };
 		CBA6B5DC1A1ACE1400B5DF1B /* AVCamPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA6B5DB1A1ACE1400B5DF1B /* AVCamPreviewView.swift */; };
+		CBB2EBB31A24123D002B3BAB /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB2EBB21A24123D002B3BAB /* AVPlayerView.swift */; };
+		CBB2EBB91A241634002B3BAB /* AVPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB2EBB81A241634002B3BAB /* AVPlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +29,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CB952BB91A0F657800559378 /* AVCamSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVCamSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB5839B11A24606C00BA8CD3 /* AVCamSwiftProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVCamSwiftProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB952BB91A0F657800559378 /* AVCamSwiftPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = AVCamSwiftPro.app; path = "/Users/sunset/projects/iOS_App/Learn/Lesson4/AVCamSwiftPro/build/Debug-iphoneos/AVCamSwiftPro.app"; sourceTree = "<absolute>"; };
 		CB952BBD1A0F657800559378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB952BBE1A0F657800559378 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB952BC01A0F657800559378 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB952BC31A0F657800559378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB952BC51A0F657800559378 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CB952BC81A0F657800559378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		CB952BCE1A0F657800559378 /* AVCamSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVCamSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB952BD31A0F657800559378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB952BD41A0F657800559378 /* AVCamSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCamSwiftTests.swift; sourceTree = "<group>"; };
 		CBA6B5DB1A1ACE1400B5DF1B /* AVCamPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCamPreviewView.swift; sourceTree = "<group>"; };
+		CBB2EBB21A24123D002B3BAB /* AVPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
+		CBB2EBB81A241634002B3BAB /* AVPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,17 +67,8 @@
 			children = (
 				CB952BBB1A0F657800559378 /* AVCamSwift */,
 				CB952BD11A0F657800559378 /* AVCamSwiftTests */,
-				CB952BBA1A0F657800559378 /* Products */,
+				CB5839B11A24606C00BA8CD3 /* AVCamSwiftProTests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		CB952BBA1A0F657800559378 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CB952BB91A0F657800559378 /* AVCamSwift.app */,
-				CB952BCE1A0F657800559378 /* AVCamSwiftTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		CB952BBB1A0F657800559378 /* AVCamSwift */ = {
@@ -86,6 +81,8 @@
 				CB952BC51A0F657800559378 /* Images.xcassets */,
 				CB952BC71A0F657800559378 /* LaunchScreen.xib */,
 				CB952BBC1A0F657800559378 /* Supporting Files */,
+				CBB2EBB21A24123D002B3BAB /* AVPlayerView.swift */,
+				CBB2EBB81A241634002B3BAB /* AVPlayerViewController.swift */,
 			);
 			path = AVCamSwift;
 			sourceTree = "<group>";
@@ -118,9 +115,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CB952BB81A0F657800559378 /* AVCamSwift */ = {
+		CB952BB81A0F657800559378 /* AVCamSwiftPro */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB952BD81A0F657800559378 /* Build configuration list for PBXNativeTarget "AVCamSwift" */;
+			buildConfigurationList = CB952BD81A0F657800559378 /* Build configuration list for PBXNativeTarget "AVCamSwiftPro" */;
 			buildPhases = (
 				CB952BB51A0F657800559378 /* Sources */,
 				CB952BB61A0F657800559378 /* Frameworks */,
@@ -131,14 +128,14 @@
 			);
 			dependencies = (
 			);
-			name = AVCamSwift;
+			name = AVCamSwiftPro;
 			productName = AVCamSwift;
-			productReference = CB952BB91A0F657800559378 /* AVCamSwift.app */;
+			productReference = CB952BB91A0F657800559378 /* AVCamSwiftPro.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CB952BCD1A0F657800559378 /* AVCamSwiftTests */ = {
+		CB952BCD1A0F657800559378 /* AVCamSwiftProTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB952BDB1A0F657800559378 /* Build configuration list for PBXNativeTarget "AVCamSwiftTests" */;
+			buildConfigurationList = CB952BDB1A0F657800559378 /* Build configuration list for PBXNativeTarget "AVCamSwiftProTests" */;
 			buildPhases = (
 				CB952BCA1A0F657800559378 /* Sources */,
 				CB952BCB1A0F657800559378 /* Frameworks */,
@@ -149,9 +146,9 @@
 			dependencies = (
 				CB952BD01A0F657800559378 /* PBXTargetDependency */,
 			);
-			name = AVCamSwiftTests;
+			name = AVCamSwiftProTests;
 			productName = AVCamSwiftTests;
-			productReference = CB952BCE1A0F657800559378 /* AVCamSwiftTests.xctest */;
+			productReference = CB5839B11A24606C00BA8CD3 /* AVCamSwiftProTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -172,7 +169,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CB952BB41A0F657800559378 /* Build configuration list for PBXProject "AVCamSwift" */;
+			buildConfigurationList = CB952BB41A0F657800559378 /* Build configuration list for PBXProject "AVCamSwiftPro" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -181,12 +178,12 @@
 				Base,
 			);
 			mainGroup = CB952BB01A0F657800559378;
-			productRefGroup = CB952BBA1A0F657800559378 /* Products */;
+			productRefGroup = CB952BB01A0F657800559378;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CB952BB81A0F657800559378 /* AVCamSwift */,
-				CB952BCD1A0F657800559378 /* AVCamSwiftTests */,
+				CB952BB81A0F657800559378 /* AVCamSwiftPro */,
+				CB952BCD1A0F657800559378 /* AVCamSwiftProTests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,6 +229,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBB2EBB91A241634002B3BAB /* AVPlayerViewController.swift in Sources */,
+				CBB2EBB31A24123D002B3BAB /* AVPlayerView.swift in Sources */,
 				CB952BC11A0F657800559378 /* ViewController.swift in Sources */,
 				CBA6B5DC1A1ACE1400B5DF1B /* AVCamPreviewView.swift in Sources */,
 				CB952BBF1A0F657800559378 /* AppDelegate.swift in Sources */,
@@ -251,7 +250,7 @@
 /* Begin PBXTargetDependency section */
 		CB952BD01A0F657800559378 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CB952BB81A0F657800559378 /* AVCamSwift */;
+			target = CB952BB81A0F657800559378 /* AVCamSwiftPro */;
 			targetProxy = CB952BCF1A0F657800559378 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -359,7 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AVCamSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AVCamSwiftPro;
 			};
 			name = Debug;
 		};
@@ -369,7 +368,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AVCamSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AVCamSwiftPro;
 			};
 			name = Release;
 		};
@@ -387,8 +386,8 @@
 				);
 				INFOPLIST_FILE = AVCamSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AVCamSwift.app/AVCamSwift";
+				PRODUCT_NAME = AVCamSwiftProTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AVCamSwiftPro.app/AVCamSwiftPro";
 			};
 			name = Debug;
 		};
@@ -402,15 +401,15 @@
 				);
 				INFOPLIST_FILE = AVCamSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AVCamSwift.app/AVCamSwift";
+				PRODUCT_NAME = AVCamSwiftProTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AVCamSwiftPro.app/AVCamSwiftPro";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CB952BB41A0F657800559378 /* Build configuration list for PBXProject "AVCamSwift" */ = {
+		CB952BB41A0F657800559378 /* Build configuration list for PBXProject "AVCamSwiftPro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB952BD61A0F657800559378 /* Debug */,
@@ -419,7 +418,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB952BD81A0F657800559378 /* Build configuration list for PBXNativeTarget "AVCamSwift" */ = {
+		CB952BD81A0F657800559378 /* Build configuration list for PBXNativeTarget "AVCamSwiftPro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB952BD91A0F657800559378 /* Debug */,
@@ -428,7 +427,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB952BDB1A0F657800559378 /* Build configuration list for PBXNativeTarget "AVCamSwiftTests" */ = {
+		CB952BDB1A0F657800559378 /* Build configuration list for PBXNativeTarget "AVCamSwiftProTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB952BDC1A0F657800559378 /* Debug */,

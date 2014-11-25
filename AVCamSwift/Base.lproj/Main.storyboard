@@ -8,7 +8,7 @@
         <!--Cam View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" userLabel="Cam View Controller" customClass="ViewController" customModule="AVCamSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" userLabel="Cam View Controller" customClass="ViewController" customModule="AVCamSwiftPro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LCU-Bq-hhg"/>
                         <viewControllerLayoutGuide type="bottom" id="Myx-V2-VGl"/>
@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5nN-lk-uog" customClass="AVCamPreviewView" customModule="AVCamSwift" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5nN-lk-uog" customClass="AVCamPreviewView" customModule="AVCamSwiftPro" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meX-Fp-zCX">
@@ -78,6 +78,7 @@
                         <outlet property="previewView" destination="5nN-lk-uog" id="bNB-jw-EGF"/>
                         <outlet property="recordButton" destination="meX-Fp-zCX" id="jat-5T-S61"/>
                         <outlet property="snapButton" destination="gj1-9G-vwL" id="67d-Ml-x4U"/>
+                        <segue destination="rde-Ym-rfI" kind="custom" identifier="previewSegue" id="I7Q-Fb-PpV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -87,6 +88,27 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
+        </scene>
+        <!--Player View Controller-->
+        <scene sceneID="PeD-iU-91x">
+            <objects>
+                <viewController id="rde-Ym-rfI" customClass="AVPlayerViewController" customModule="AVCamSwiftPro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fe5-EV-YbA"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Ls-R6-gmg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ebw-1E-NV4" customClass="PlayerView" customModule="AVCamSwiftPro" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="playerView" destination="ebw-1E-NV4" id="j4P-KL-vTL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQk-ce-tgd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="968" y="136"/>
         </scene>
     </scenes>
 </document>

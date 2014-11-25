@@ -26,6 +26,8 @@ class ViewController: UIViewController, AVCaptureFileOutputRecordingDelegate {
     var movieFileOutput: AVCaptureMovieFileOutput?
     var stillImageOutput: AVCaptureStillImageOutput?
     
+    var tmpMovieURL: NSURL?
+    
 
     var deviceAuthorized: Bool  = false
     var backgroundRecordId: UIBackgroundTaskIdentifier = UIBackgroundTaskInvalid
@@ -178,7 +180,7 @@ class ViewController: UIViewController, AVCaptureFileOutputRecordingDelegate {
                 self.removeObserver(self, forKeyPath: "sessionRunningAndDeviceAuthorized", context: &SessionRunningAndDeviceAuthorizedContext)
                 
                 self.removeObserver(self, forKeyPath: "stillImageOutput.capturingStillImage", context: &CapturingStillImageContext)
-                self.removeObserver(self, forKeyPath: "movieFileOutput.recording", context: &SessionRunningAndDeviceAuthorizedContext)
+                self.removeObserver(self, forKeyPath: "movieFileOutput.recording", context: &RecordingContext)
                 
                 
             }
@@ -187,6 +189,8 @@ class ViewController: UIViewController, AVCaptureFileOutputRecordingDelegate {
             
         })
         
+        
+        super.viewWillDisappear(animated)
         
         
     }
@@ -231,15 +235,16 @@ class ViewController: UIViewController, AVCaptureFileOutputRecordingDelegate {
             dispatch_async(dispatch_get_main_queue(), {
                 
                 if isRecording {
-                    self.recordButton.titleLabel!.text = "Stop"
+//                    self.recordButton.titleLabel!.text = "Stop"
+                    self.recordButton.setTitle("Stop ", forState: UIControlState.Normal)
                     self.recordButton.enabled = true
 //                    self.snapButton.enabled = false
                     self.cameraButton.enabled = false
                     
                 }else{
 //                    self.snapButton.enabled = true
-
-                    self.recordButton.titleLabel!.text = "Record"
+                    self.recordButton.setTitle("Record", forState: UIControlState.Normal)
+//                    self.recordButton.titleLabel!.text = "Record"
                     self.recordButton.enabled = true
                     self.cameraButton.enabled = true
                     
@@ -257,7 +262,15 @@ class ViewController: UIViewController, AVCaptureFileOutputRecordingDelegate {
         
     }
     
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "previewSegue" {
+            print("tmpMovieURL: " )
+            println(self.tmpMovieURL)
+//            segue.setValue(self.tmpMovieURL, forKey: "tmpMovieURL")
+            (segue.destinationViewController as AVPlayerViewController).tmpMovieURL  = self.tmpMovieURL
+
+        }
+    }
     // MARK: Selector
     func subjectAreaDidChange(notification: NSNotification){
         var devicePoint: CGPoint = CGPoint(x: 0.5, y: 0.5)
@@ -389,11 +402,16 @@ class ViewController: UIViewController, AVCaptureFileOutputRecordingDelegate {
                 
             }
             
-            NSFileManager.defaultManager().removeItemAtURL(outputFileURL, error: nil)
+//            NSFileManager.defaultManager().removeItemAtURL(outputFileURL, error: nil)
             
             if backgroundRecordId != UIBackgroundTaskInvalid {
                 UIApplication.sharedApplication().endBackgroundTask(backgroundRecordId)
             }
+            
+            self.tmpMovieURL = outputFileURL
+           
+            
+            self.performSegueWithIdentifier("previewSegue", sender: self)
             
         })
         
